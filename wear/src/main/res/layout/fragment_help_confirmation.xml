@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.SwipeDismissFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/confirmation_swipe_dismiss_root"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linear_container">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/emergency_message_sent"
+            android:src="@drawable/ic_watch_24dp" />
+
+        <TextView
+            android:id="@+id/helpTitle"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/emergency_message_sent"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView3"/>
+
+        <TextView
+            android:id="@+id/contacting"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:maxLines="5"
+            android:text="@string/a_request_for_help_has_been_sent_to_all_emergency_contacts_on_your_list"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+
+
+</android.support.wear.widget.SwipeDismissFrameLayout>

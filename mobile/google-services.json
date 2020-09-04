@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "320755984382",
+    "firebase_url": "https://checkasenior-797a3.firebaseio.com",
+    "project_id": "checkasenior-797a3",
+    "storage_bucket": "checkasenior-797a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320755984382:android:1caf1e0f9749d8e2",
+        "android_client_info": {
+          "package_name": "com.ben.checkasenior"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320755984382-orr5ltaucnhvmg9pnm8rihijdk2o31rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ben.checkasenior",
+            "certificate_hash": "291709b8ed4151f9cc8c31d44d4e53c134ecac20"
+          }
+        },
+        {
+          "client_id": "320755984382-m34kh3796nn0lb0pj61353fecf1euiii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC49IbdTDDLUZHuKM_kYjYMeNkXHwtgkeA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320755984382-m34kh3796nn0lb0pj61353fecf1euiii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

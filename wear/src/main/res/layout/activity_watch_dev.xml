@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".home.WatchMainActivity"
+    tools:deviceIds="wear"
+    app:boxedEdges="all">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/inner_frame_layout_padding"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startService"
+                android:text="Start Service" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="stopService"
+                android:text="Stop Service" />
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adjustment" />
+
+            <EditText
+                android:id="@+id/adjustment_var"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adjustment variable"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sampling frequency" />
+
+            <EditText
+                android:id="@+id/sampling_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sampling freq"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low G" />
+            <EditText
+                android:id="@+id/low_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Low G"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High G" />
+            <EditText
+                android:id="@+id/high_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="High G"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Window Duration" />
+            <EditText
+                android:id="@+id/window_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Window duration"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impact duration" />
+            <EditText
+                android:id="@+id/impact_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Impact duration"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Long Lie Duration" />
+            <EditText
+                android:id="@+id/longlie_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longlie Duration"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low stable G" />
+            <EditText
+                android:id="@+id/stable_g_low"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Low stable G"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High stable G" />
+            <EditText
+                android:id="@+id/stable_g_high"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="High stable G"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.wear.widget.BoxInsetLayout>

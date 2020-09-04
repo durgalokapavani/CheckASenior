@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivityFragment"
+        tools:showIn="@layout/activity_main"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_red_sos_450px"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="24dp"
+            app:cpb_background_progressbar_color="@android:color/transparent"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progress="0"
+            app:cpb_progressbar_color="@android:color/holo_green_dark"
+            app:cpb_progressbar_width="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tapToCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Tap again cancel"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/subscriptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:text="Add 24/7 Monitoring"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tapToCancel"
+            android:foreground="@drawable/ripple_effect"/>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subscriptionButton">
+
+
+            <EditText
+                android:id="@+id/name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:hint="Name"
+                android:textAlignment="viewStart" />
+            <EditText
+                android:id="@+id/phone1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="Phone"
+                android:ems="10"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:saveEnabled="false"/>
+
+            <Button
+                android:id="@+id/callPhone1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_baseline_call_24px"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:foreground="@drawable/ripple_effect"/>
+
+            <Button
+                android:id="@+id/smsPhone1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_baseline_chat_24px"
+                android:foreground="@drawable/ripple_effect" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout1">
+
+
+            <EditText
+                android:id="@+id/name2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:hint="Name"
+                android:textAlignment="viewStart" />
+            <EditText
+                android:id="@+id/phone2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="Phone"
+                android:ems="10"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:saveEnabled="false"/>
+
+            <Button
+                android:id="@+id/callPhone2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_baseline_call_24px"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:foreground="@drawable/ripple_effect"/>
+
+            <Button
+                android:id="@+id/smsPhone2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_baseline_chat_24px"
+                android:foreground="@drawable/ripple_effect"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout2">
+
+
+            <EditText
+                android:id="@+id/name3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:hint="Name"
+                android:textAlignment="viewStart"/>
+            <EditText
+                android:id="@+id/phone3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:hint="Phone"
+                android:ems="10"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:saveEnabled="false"/>
+
+            <Button
+                android:id="@+id/callPhone3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_baseline_call_24px"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:foreground="@drawable/ripple_effect"/>
+
+            <Button
+                android:id="@+id/smsPhone3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/ic_baseline_chat_24px"
+                android:foreground="@drawable/ripple_effect"/>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
